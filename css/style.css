@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,23 +28,12 @@ header {
   align-items: center;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
 .logo-container img {
   width: 211px;
-  margin-right: 10px;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 24px;
 }
 
 #intro {
-  padding: 182px 0 82px;
+  padding: 120px 0 60px;
 }
 
 #intro p {
@@ -53,15 +41,16 @@ header h1 {
   color: #000;
   font-weight: 400;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.5;
 }
 
 #football-rounds {
-  background: #ffffff;
-  border: 1px solid #dddddd;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
   padding: 24px;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
 }
 
 .round-header {
@@ -95,6 +84,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .round-header button:disabled {
@@ -113,7 +103,7 @@ header h1 {
   align-items: center;
   margin: 10px 0;
   position: relative;
-  padding-bottom: 16px; /* Espaço para a linha */
+  padding-bottom: 16px;
 }
 
 .game-item::after {
@@ -126,14 +116,13 @@ header h1 {
   background-color: #ddd;
 }
 
-/* Remover o padding-bottom e margin da última div */
 .game-item:last-child {
-  margin: 0; /* Remove o margin do último item */
-  padding-bottom: 0; /* Remove o padding-bottom do último item */
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .game-item:last-child::after {
-  display: none; /* Remove a linha do último item */
+  display: none;
 }
 
 .game-item span {
