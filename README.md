@@ -53,6 +53,10 @@ Este projeto é uma aplicação web simples que exibe as rodadas e jogos de um c
 
 - A aplicação depende da API externa. Caso a API fique fora do ar, a aplicação exibirá uma mensagem de erro
 
+## 🌐 Link de Produção
+
+Acesse o projeto em produção [aqui](https://jhonatansarmento.github.io/sports-rounds-viewer/).
+
 ## 📞 Contato
 
 **Desenvolvedor:** Jhonatan Tibiquera Sarmento de Souza  
