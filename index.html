@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rodadas de Futebol</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/sevn-logo.png" alt="SEVN Esportes Logo" class="logo" />
+      </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <p>Confira as rodadas do nosso campeonato fictício!</p>
+      </section>
+
+      <section id="football-rounds">
+        <div class="round-header">
+          <button id="prev-round" disabled>
+            <img src="img/btn_left.svg" alt="Botão Anterior" />
+          </button>
+          <h2>Rodadas de Jogos</h2>
+          <span id="round-number">RODADA 1</span>
+          <button id="next-round">
+            <img src="img/btn_right.svg" alt="Botão Próximo" />
+          </button>
+        </div>
+      
+        <div id="games-list">
+          <!-- Jogos da rodada -->
+        </div>
+      </section>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
