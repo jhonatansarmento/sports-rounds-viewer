@@ -60,7 +60,7 @@ header h1 {
   background: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 10px;
-  padding: 20px;
+  padding: 24px;
   width: 340px;
 }
 
@@ -112,6 +112,28 @@ header h1 {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   margin: 10px 0;
+  position: relative;
+  padding-bottom: 16px; /* Espaço para a linha */
+}
+
+.game-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+/* Remover o padding-bottom e margin da última div */
+.game-item:last-child {
+  margin: 0; /* Remove o margin do último item */
+  padding-bottom: 0; /* Remove o padding-bottom do último item */
+}
+
+.game-item:last-child::after {
+  display: none; /* Remove a linha do último item */
 }
 
 .game-item span {
