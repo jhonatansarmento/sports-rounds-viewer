@@ -27,18 +27,19 @@ function renderRound(roundIndex) {
   gamesListElement.innerHTML = round.games.map(game => `
     <div class="game-item">
       <div class="team team-left">
-        <img src="img/team_shield_${game.team_home_id.split('-')[1]}.svg" alt="Escudo ${game.team_home_name}">
+        <img src="img/team_shield_${game.team_home_id.split('-')[1]}.svg" alt="Escudo ${game.team_home_name}" width="50" height="50">
         <span>${game.team_home_name}</span>
       </div>
       <div class="score">
-        <span>${game.team_home_score}</span> <img src="img/x.svg" alt="Ícone de confronto"> <span>${game.team_away_score}</span>
+        <span>${game.team_home_score}</span> <img src="img/x.svg" alt="Ícone de confronto" width="16" height="16"> <span>${game.team_away_score}</span>
       </div>
       <div class="team team-right">
         <span>${game.team_away_name}</span>
-        <img src="img/team_shield_${game.team_away_id.split('-')[1]}.svg" alt="Escudo ${game.team_away_name}">
+        <img src="img/team_shield_${game.team_away_id.split('-')[1]}.svg" alt="Escudo ${game.team_away_name}" width="50" height="50">
       </div>
     </div>
   `).join('');
+  
 
   prevRoundButton.disabled = roundIndex === 0;
   nextRoundButton.disabled = roundIndex === roundsData.length - 1;

@@ -3,44 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Confira as rodadas do campeonato fictício de futebol e acompanhe os jogos em tempo real."
+    />
     <title>Rodadas de Futebol</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="img/sevn-logo.png" alt="Logo SEVN Esportes" class="logo" />
+        <img
+          src="img/sevn-logo.webp"
+          alt="Logo SEVN Esportes"
+          class="logo"
+          width="200"
+        />
       </div>
     </header>
-
     <main>
       <section id="intro">
         <p>Confira as rodadas do nosso campeonato fictício!</p>
       </section>
-
       <section id="football-rounds">
         <div class="round-header">
           <button id="prev-round" disabled aria-label="Rodada anterior">
-            <img src="img/btn_left.svg" alt="Botão para rodada anterior" />
+            <img
+              src="img/btn_left.svg"
+              alt="Botão para rodada anterior"
+              width="24"
+              height="24"
+            />
           </button>
           <div>
             <h2>Rodadas de Jogos</h2>
             <span id="round-number">RODADA 1</span>
           </div>
           <button id="next-round" aria-label="Próxima rodada">
-            <img src="img/btn_right.svg" alt="Botão para próxima rodada" />
+            <img
+              src="img/btn_right.svg"
+              alt="Botão para próxima rodada"
+              width="24"
+              height="24"
+            />
           </button>
         </div>
-        
         <div id="loading" class="loading">
           <div class="spinner"></div>
         </div>
-        
-        <div id="games-list" style="display: none;">
+        <div id="games-list" style="display: none">
           <!-- Os jogos serão renderizados dinamicamente -->
         </div>
       </section>
-
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
